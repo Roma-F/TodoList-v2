@@ -39,7 +39,7 @@ function render() {
 
     let items = Array.from(document.querySelectorAll('.todo-item'));
 
-    // не выполняем код ниже
+  
     if (items.length === 0) return;
 
     items.forEach(el => {
