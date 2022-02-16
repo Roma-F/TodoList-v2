@@ -1,0 +1,81 @@
+#tdt {
+    width:  430px;
+    height: 15px;
+    padding: 5px 10px 5px 10px;
+    border:2px solid;
+    font-size:16px;
+    font-family: Tahoma,serif;
+
+}
+
+.todo-form__button {
+    padding: 5px;
+}
+
+/* item */
+.todo-item {
+
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.todo-item--hidden {
+    display: none;
+}
+
+.todo-item__check:checked ~ .todo-item__name {
+    text-decoration: line-through;
+}
+
+.todo-item__name {
+    flex: 1;
+}
+
+/* list */
+.todo-list {
+    margin-top: 10px;
+    width: 500px;
+    padding: 40px;
+    border: 2px solid;
+}
+
+/* form */
+.todo-form {
+    margin-top: 10px;
+    width: 500px;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    border: 2px solid
+}
+
+.todo-form__item + .todo-form__item {
+    font-size:30px;
+    margin-left: 12px;
+}
+
+.todo-footer {
+    margin-top: 10px;
+    width: 500px;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+}
+
+.todo-footer__item + .todo-footer__item {
+    margin-left: 12px;
+}
+
+.todo-footer__actions {
+    flex: 1;
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    border: 2px solid
+}
+
+[type="radio"]:checked ~ span {
+    color: red;
+}
